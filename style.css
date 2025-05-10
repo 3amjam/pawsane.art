@@ -3,47 +3,49 @@ body {
   padding-top: 100px;
   background-color: #000;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 18px; /* increased base font size */
 }
 
 .about-glow-box {
   background-color: #000;
   color: #f7aaff;
   border: 1px solid #f7aaff;
-  padding: 20px;
-  max-width: 500px;
+  padding: 30px; /* more padding */
+  max-width: 700px; /* wider box */
   margin: 0 auto;
-  box-shadow: 0 0 20px #f7aaff88;
+  box-shadow: 0 0 25px #f7aaff88;
   text-align: center;
 }
 
 .about-glow-box h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
-  text-shadow: 0 0 5px #f7aaff, 0 0 10px #f7aaff;
+  font-size: 40px; /* bigger heading */
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #f7aaff, 0 0 12px #f7aaff;
 }
 
 .about-glow-box .info {
-  font-size: 14px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin-bottom: 18px;
 }
 
 .about-glow-box .japanese {
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0.8;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .about-glow-box .section {
-  margin: 10px 0;
-  padding: 10px;
+  margin: 12px 0;
+  padding: 12px;
   border-top: 1px solid #f7aaff33;
-  font-size: 13px;
-  line-height: 1.5em;
+  font-size: 17px;
+  line-height: 1.6em;
 }
 
 .about-glow-box a {
   color: #f7aaff;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .about-glow-box a:hover {
@@ -57,13 +59,16 @@ body {
 }
 
 @media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
   .about-glow-box {
-    max-width: 90%;
-    padding: 15px;
-    font-size: 14px;
+    max-width: 95%;
+    padding: 20px;
   }
 
   .about-glow-box .section {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
