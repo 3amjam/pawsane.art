@@ -1,0 +1,41 @@
+.about-glow-box {
+  transform: scale(1.4);
+  background-color: #000;
+  color: #f7aaff;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #f7aaff;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 0 20px #f7aaff88;
+  text-align: center;
+}
+
+.about-glow-box h1 {
+  font-family: cute;
+  font-size: 32px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #f7aaff, 0 0 10px #f7aaff;
+}
+
+.about-glow-box .info {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.about-glow-box .japanese {
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+.about-glow-box .section {
+  margin: 10px 0;
+  padding: 10px;
+  border-top: 1px solid #f7aaff33;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+.header-title, .site-title, .site-title a {
+  display: none !important;
+}
