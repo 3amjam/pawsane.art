@@ -1,12 +1,10 @@
-/* --- Base body styles to prevent clipping --- */
 body {
   margin: 0;
-  padding-top: 100px; /* Add space so top isn't cut off */
-  background-color: #000; /* Match the box background or change if needed */
+  padding-top: 100px;
+  background-color: #000;
   font-family: 'Courier New', Courier, monospace;
 }
 
-/* --- Main box --- */
 .about-glow-box {
   background-color: #000;
   color: #f7aaff;
@@ -18,27 +16,23 @@ body {
   text-align: center;
 }
 
-/* --- Header title --- */
 .about-glow-box h1 {
   font-size: 32px;
   margin-bottom: 10px;
   text-shadow: 0 0 5px #f7aaff, 0 0 10px #f7aaff;
 }
 
-/* --- Info lines --- */
 .about-glow-box .info {
   font-size: 14px;
   margin-bottom: 15px;
 }
 
-/* --- Optional Japanese text style --- */
 .about-glow-box .japanese {
   font-size: 12px;
   opacity: 0.8;
   margin-bottom: 20px;
 }
 
-/* --- Section styling --- */
 .about-glow-box .section {
   margin: 10px 0;
   padding: 10px;
@@ -47,7 +41,6 @@ body {
   line-height: 1.5em;
 }
 
-/* --- Link styling --- */
 .about-glow-box a {
   color: #f7aaff;
   text-decoration: none;
@@ -57,14 +50,12 @@ body {
   text-decoration: underline;
 }
 
-/* --- Hide unwanted site headers if needed --- */
 .header-title,
 .site-title,
 .site-title a {
   display: none !important;
 }
 
-/* --- Mobile responsiveness --- */
 @media (max-width: 600px) {
   .about-glow-box {
     max-width: 90%;
