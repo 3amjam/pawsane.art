@@ -9,11 +9,7 @@
   box-shadow: 0 0 20px #f7aaff88;
   text-align: center;
 }
-body {
-  margin: 0;
-  padding-top: 100px; /* Pushes content down so it's not hidden at the top */
-  background-color: #fff; /* or #000 if you want dark background */
-}
+
 .about-glow-box h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 32px;
