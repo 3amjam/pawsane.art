@@ -1,5 +1,6 @@
 .about-glow-box {
   transform: scale(1.4);
+  margin-top: 20px;
   background-color: #000;
   color: #f7aaff;
   font-family: 'Courier New', Courier, monospace;
