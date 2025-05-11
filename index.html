@@ -3,11 +3,115 @@
 <head>
   <meta charset="UTF-8">
   <title>julie :3c</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="icon.png">
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #000;
+      color: #e0b0ff;
+      font-family: monospace;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    a {
+      color: #e0b0ff;
+      text-decoration: none;
+      text-shadow: 0 0 5px #e0b0ff;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      text-shadow: 0 0 10px #e0b0ff;
+    }
+
+    .section {
+      margin: 40px 0;
+    }
+
+    .info {
+      margin: 5px 0;
+    }
+
+    /* Menu Button */
+    #menu-btn {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 24px;
+      color: #e0b0ff;
+      cursor: pointer;
+      z-index: 1001;
+      text-shadow: 0 0 10px #e0b0ff;
+      background: none;
+      border: none;
+    }
+
+    /* Sidebar */
+    #sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100vh;
+      background: #0a0a0a;
+      border-right: 1px solid #e0b0ff;
+      box-shadow: 0 0 20px #e0b0ff;
+      padding: 40px 20px;
+      transition: left 0.4s ease;
+      z-index: 1000;
+    }
+
+    #sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #sidebar ul li {
+      margin: 20px 0;
+    }
+
+    #sidebar ul li a {
+      color: #e0b0ff;
+      text-decoration: none;
+      font-size: 20px;
+      text-shadow: 0 0 5px #e0b0ff;
+    }
+
+    @media (max-width: 600px) {
+      #sidebar {
+        width: 200px;
+        padding: 30px 15px;
+      }
+
+      #sidebar ul li a {
+        font-size: 18px;
+      }
+
+      #menu-btn {
+        font-size: 20px;
+        top: 15px;
+        left: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Menu Button -->
+  <div id="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <ul>
+      <li><a href="https://lovesane.me/fishman" target="_blank" onclick="toggleMenu()">fishman</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
   <div class="about-glow-box">
     <h1>hi im julie</h1>
     <p class="info"> ༽ she/her ༼ </p>
@@ -36,6 +140,13 @@
       <a href="https://discord.com/users/379312969911107605" target="_blank">discord</a>
     </div>
   </div>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.style.left = sidebar.style.left === '0px' ? '-250px' : '0px';
+    }
+  </script>
 
 </body>
 </html>
