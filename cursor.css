@@ -1,11 +1,11 @@
-body {
-  cursor: url('kuro_cursor.png') 0 0, auto;
+html, body {
+  cursor: url('/kuro_cursor.png') 0 0, auto;
 }
 
 a, button {
-  cursor: url('kuro_click.png') 0 0, pointer;
+  cursor: url('/kuro_click.png') 0 0, pointer;
 }
 
 input, textarea {
-  cursor: url('kuro_text.png') 6 6, text;
+  cursor: url('/kuro_text.png') 6 6, text;
 }
