@@ -15,7 +15,6 @@ body {
 .image-grid {
   column-count: 4;
   column-gap: 20px;
-  padding: 0;
 }
 
 .grid-item {
@@ -38,16 +37,19 @@ body {
   transition: transform 0.3s ease;
 }
 
-.image-grid:hover .grid-item {
-  transform: scale(0.95);
-  filter: brightness(0.7);
-}
-
-.image-grid:hover .grid-item:hover {
+.grid-item:hover {
   transform: scale(1.08);
   filter: brightness(1.1);
   z-index: 1;
 }
+
+@supports (selector(:has(*))) {
+  .image-grid:has(.grid-item:hover) .grid-item:not(:hover) {
+    transform: scale(0.95);
+    filter: brightness(0.7);
+  }
+}
+
 @media (max-width: 1024px) {
   .image-grid {
     column-count: 3;
