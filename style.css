@@ -3,22 +3,22 @@ body {
   padding-top: 100px;
   background-color: #000;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 18px; /* increased base font size */
+  font-size: 18px;
 }
 
 .about-glow-box {
   background-color: #000;
   color: #f7aaff;
   border: 1px solid #f7aaff;
-  padding: 30px; /* more padding */
-  max-width: 700px; /* wider box */
+  padding: 30px;
+  max-width: 700px;
   margin: 0 auto;
   box-shadow: 0 0 25px #f7aaff88;
   text-align: center;
 }
 
 .about-glow-box h1 {
-  font-size: 40px; /* bigger heading */
+  font-size: 40px;
   margin-bottom: 15px;
   text-shadow: 0 0 5px #f7aaff, 0 0 12px #f7aaff;
 }
@@ -71,4 +71,16 @@ body {
   .about-glow-box .section {
     font-size: 15px;
   }
+}
+
+body {
+  cursor: url('kuro_cursor.png') 0 0, auto;
+}
+
+a, button {
+  cursor: url('kuro_click.png') 0 0, pointer;
+}
+
+input, textarea {
+  cursor: url('kuro_text.png') 6 6, text;
 }
